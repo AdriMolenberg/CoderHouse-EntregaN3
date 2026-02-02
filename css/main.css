@@ -35,6 +35,29 @@ body {
   width: 120px;
 }
 
+.site-footer {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem 0;
+}
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.site-footer a:hover {
+  color: cornflowerblue;
+}
+.site-footer p {
+  margin: 0;
+}
+
 .benefits-products {
   display: flex;
   gap: 2rem;
