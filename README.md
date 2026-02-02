@@ -5,14 +5,12 @@ Proyecto realizado para la Preentrega 3 del curso de Desarrollo Web en CoderHous
 El sitio corresponde a una web informativa y comercial de productos Natura 🌿, pensada para visualizarse correctamente en dispositivos mobile, tablet y desktop, utilizando HTML, Bootstrap y SASS (SCSS). 
 
 
-🔗 GitHub Pages 
-
-El proyecto se encuentra publicado y accesible en el siguiente enlace: 
+🔗 GitHub Pages
+El proyecto se encuentra publicado y accesible en el siguiente enlace:
 👉 https://adrimolenberg.github.io/CoderHouse-EntregaN3 
 
 
-📂 Estructura del proyecto 
-
+📂 Estructura del proyecto
 ├── index.html 
 ├── pages/ 
 │ ├── about.html 
@@ -29,7 +27,6 @@ El proyecto se encuentra publicado y accesible en el siguiente enlace:
 └── README.md 
 
 🛠️ Tecnologías utilizadas
-
 HTML5 
 CSS3 
 SASS / SCSS 
@@ -38,7 +35,6 @@ Git & GitHub
 GitHub Pages 
 
 🎯 Objetivos cumplidos
-
 ✅ Estructura HTML semántica y ordenada  
 ✅ Maquetación con Bootstrap + Flexbox + Grid 
 ✅ Migración completa de CSS a SCSS 
@@ -48,6 +44,5 @@ GitHub Pages
 ✅ Publicación mediante GitHub Pages 
 
 
-👩‍💻 Autora 
-
+👩‍💻 Autora
 Adriana Molenberg
