@@ -47,4 +47,14 @@ body {
   min-width: 280px;
 }
 
+.catalog {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem;
+}
+
 /*# sourceMappingURL=main.css.map */
