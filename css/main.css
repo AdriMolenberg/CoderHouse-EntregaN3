@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +18,18 @@ body {
   width: auto;
 }
 
+/* Animación */
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Header */
 .site-header {
   background: linear-gradient(to bottom, #ffffff, #ff8c00);
   padding: 3rem 1rem;
@@ -27,6 +40,7 @@ body {
   font-size: 2.5rem;
   text-align: center;
   text-shadow: 1px 1px 3px black;
+  animation: fade-down 1s ease-out;
 }
 .site-header .logo {
   position: absolute;
@@ -58,16 +72,46 @@ body {
   margin: 0;
 }
 
+/* CAROUSEL */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-item img {
+  height: 420px;
+  object-fit: cover;
+}
+
+/* Responsive */
+.carousel-item img {
+  height: 420px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 260px;
+  }
+}
+
+/* SECCION BENEFICIOS */
 .benefits-products {
   display: flex;
   gap: 2rem;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.benefits-products .benefits,
-.benefits-products .products {
+.benefits-products .benefits, .benefits-products .products {
   flex: 1;
   min-width: 280px;
+  /* Animación suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.benefits-products .benefits:hover, .benefits-products .products:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .catalog {
@@ -93,6 +137,15 @@ body {
   gap: 15px;
 }
 
+/* Animación del botón */
+input[type=submit] {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+input[type=submit]:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .about-grid {
     grid-template-columns: 1fr;
