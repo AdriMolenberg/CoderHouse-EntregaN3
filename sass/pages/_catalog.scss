@@ -19,7 +19,7 @@
     }
 
     table { 
-        min-width: 400px; // Ancho minimo para mantener legibilidad 
+        width: 100%;
         border-collapse: collapse; 
         background-color: rgba(255, 255, 255, 0.30); 
 
@@ -56,4 +56,11 @@
         opacity: 1; 
         transform: translateY(0); 
     } 
-} 
+}
+
+/* Ajustar texto en mobile */
+@media (max-width: 576px) { 
+  .catalog table { 
+    font-size: 0.9rem; 
+  } 
+}
