@@ -35,4 +35,16 @@ body {
   width: 120px;
 }
 
+.benefits-products {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.benefits-products .benefits,
+.benefits-products .products {
+  flex: 1;
+  min-width: 280px;
+}
+
 /*# sourceMappingURL=main.css.map */
