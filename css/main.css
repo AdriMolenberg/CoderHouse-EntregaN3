@@ -57,4 +57,17 @@ body {
   padding: 2rem;
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 40px;
+}
+
+.form-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 /*# sourceMappingURL=main.css.map */
