@@ -4,4 +4,7 @@
 
 // Base
 @use "base/reset"; 
-@use "base/typography"; 
+@use "base/typography";
+
+// Layout 
+@use "layout/navbar";
