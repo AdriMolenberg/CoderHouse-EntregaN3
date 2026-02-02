@@ -96,7 +96,7 @@ body {
   }
 }
 
-/* SECCION BENEFICIOS */
+/* SECCIÓN BENEFICIOS Y PRODUCTOS DESTACADOS */
 .benefits-products {
   display: flex;
   gap: 2rem;
@@ -122,8 +122,42 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   padding: 2rem;
+  /* Animación de entrada */
+  animation: fade-up 0.8s ease-out;
+  /* Tabla del catálogo */
+}
+.catalog table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.catalog table th {
+  background-color: #ff8c00;
+  color: white;
+  padding: 0.75rem;
+}
+.catalog table td {
+  padding: 0.75rem;
+}
+.catalog table tr {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.catalog table tr:hover {
+  background-color: rgba(255, 140, 0, 0.08);
+  transform: scale(1.01);
 }
 
+/* Animación */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
